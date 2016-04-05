@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_styles}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link href="Styles/{CCS_Style}/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{Header}
+{AdminMenu} 
+<table>
+  <tr>
+    <td valign="top">
+      <!-- BEGIN Grid styles -->
+      <table cellspacing="0" cellpadding="0" width="200" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+                <th>{res:im_styles}</th>
+ 
+                <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>{res:im_style_name}</th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td><a href="{style_name_Src}">{style_name}</a>&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td>{res:CCS_NoRecords}</td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td>[<a href="{styles_Insert_Src}">{res:CCS_InsertLink}</a>] </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid styles --></td> 
+    <td valign="top">
+      <!-- BEGIN Record styles1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:im_style}</th>
+ 
+                  <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:im_style_name}</th>
+ 
+                  <td><input maxlength="50" size="50" value="{style_name}" name="{style_name_Name}"></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="Button" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="Button" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="Button" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END Record styles1 --></td>
+  </tr>
+</table>
+{res:im_style_instructions} {Footer} 
+</body>
+</html>

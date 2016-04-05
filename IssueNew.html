@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_add_new_issue}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link href="Styles/{CCS_Style}/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{Header} 
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <!-- BEGIN Record issues -->
+      <table cellspacing="0" cellpadding="0" border="0" width="780">
+        <tr>
+          <td valign="top">
+            <form name="{HTMLFormName}" action="{Action}" method="post" enctype="{HTMLFormEnctype}">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:im_add_new_issue}</th>
+ 
+                  <td class="HeaderRight"><img src="Styles/{CCS_Style}/	Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:im_issue_name}&nbsp;*</th>
+ 
+                  <td width="100%"><input maxlength="100" size="70" value="{issue_name}" name="issue_name" style="width:100%"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_issue_description}&nbsp;*</th>
+ 
+                  <td><textarea name="issue_desc" rows="10" cols="70" style="width:100%">{issue_desc}</textarea></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_priority}</th>
+ 
+                  <td>
+                    <select name="priority_id">
+                      {priority_id_Options}
+                    </select>
+ &nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_status}&nbsp;</th>
+ 
+                  <td>
+                    <select name="status_id">
+                      {status_id_Options}
+                    </select>
+ &nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_version}&nbsp;</th>
+ 
+                  <td><input maxlength="10" size="10" value="{version}" name="version">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_assigned_to}&nbsp;</th>
+ 
+                  <td>
+                    <select name="assigned_to">
+                      {assigned_to_Options}
+                    </select>
+ &nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_user_submitted}&nbsp;</th>
+ 
+                  <td>{user_name}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_date_submitted}</th>
+ 
+                  <td>{date_submitted}&nbsp;</td>
+                </tr>
+ 
+                <!-- BEGIN Panel UploadControls -->
+                <tr class="Controls">
+                  <th>{res:im_file}</th>
+ 
+                  <td>
+                    <!-- BEGIN FileUpload attachment --><input type="hidden" value="{State}" name="{ControlName}">
+                    <!-- BEGIN Info -->&nbsp;{FileName}&nbsp;{FileSize}&nbsp;{res:CCS_Bytes}.<!-- END Info -->
+                    <!-- BEGIN Upload --><input type="file" name="{FileControl}"><!-- END Upload -->
+                    <!-- BEGIN DeleteControl -->{res:CCS_Delete} <input type="checkbox" name="{DeleteControl}" {DeleteChecked}><!-- END DeleteControl --><!-- END FileUpload attachment --></td>
+                </tr>
+ <!-- END Panel UploadControls -->
+                <tr class="Footer">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Insert --><input class="Button" type="submit" value="{res:CCS_Insert}" name="Insert"><!-- END Button Insert -->
+                    <!-- BEGIN Button Cancel --><input class="Button" type="submit" value="{res:CCS_Cancel}" name="Cancel"><!-- END Button Cancel -->&nbsp;</td>
+                </tr>
+              </table>
+              <input type="hidden" value="{date_now}" name="{date_now_Name}">
+            </form>
+          </td>
+        </tr>
+      </table>
+      <!-- END Record issues --></td>
+  </tr>
+</table>
+{Footer} 
+</body>
+</html>

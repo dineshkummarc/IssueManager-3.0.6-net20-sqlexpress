@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_installation}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link href="Styles/{CCS_Style}/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<center>
+<!-- BEGIN Panel Panel1 --><br>
+<table cellspacing="0" cellpadding="0" width="780" border="0">
+		<tr>
+				<td valign="top">
+						<table class="Header" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+										<td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+										<th>{res:inst_welcome_install}</th>
+ 
+										<td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+								</tr>
+						</table>
+ 
+						<table class="Grid" cellspacing="0" cellpadding="0">
+								<tr class="Caption">
+										<th>{res:inst_application}</th>
+								</tr>
+ 
+								<tr class="Row">
+										<td>{res:inst_introduce}<br>
+												<br>
+												<table width="100%" border="0">
+														<tr>
+																<th style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{res:inst_system_requirements}</b></th>
+ 
+																<th style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{res:inst_status}</b></th>
+														</tr>
+ 
+														<tr>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px">{res:inst_asp_version}</td> 
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b><font color=green>{res:inst_status_ok}</font></b></td>
+														</tr>
+ 
+														<tr>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px">{res:inst_fso_check}</td>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{FsoCheck}</b></td>
+														</tr>
+
+														<tr>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px">{res:inst_upload_check}</td>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{UploadCheck}</b></td>
+														</tr>
+ 
+														<tr>
+														  <td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px">{res:inst_mailer_check}</td>
+														  <td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{MailerCheck}</b></td>
+														</tr>
+
+														<tr>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px">{res:inst_writable_common_asp}</td> 
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{WriteCheck}</b></td>
+														</tr>
+ 
+														<tr>
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px">{res:inst_writable_folder}</td> 
+																<td style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px"><b>{FolderCheck}</b></td>
+														</tr>
+												</table>
+												<br>
+												<br>
+												
+<!-- BEGIN Panel FsoResolution -->
+<br>
+<div style="border:1px solid red;padding:5px;background-color:white;color:red">
+{res:inst_resolution_fso}
+</div>
+<!-- END Panel FsoResolution -->
+
+<!-- BEGIN Panel UploadResolution -->
+<br>
+<div style="border:1px solid red;padding:5px;background-color:white;color:red">
+		{res:inst_resolution_upload}
+</div>
+<!-- END Panel UploadResolution -->
+
+
+<!-- BEGIN Panel MailerResolution --><br>
+<div style="border:1px solid red;padding:5px;background-color:white;color:red">
+  {res:inst_resolution_mailer}
+</div>
+<!-- END Panel MailerResolution -->
+
+<!-- BEGIN Panel MailerRemark --><br>
+<div style="border:1px solid red;padding:5px;background-color:white;color:red">
+  {res:inst_remarks_mailer}
+</div>
+<!-- END Panel MailerRemark -->
+
+<!-- BEGIN Panel WriteResolution -->
+<br>
+<div style="border:1px solid red;padding:5px;background-color:white;color:red">
+		{res:inst_resolution_write_asp}
+</div>
+<!-- END Panel WriteResolution -->
+												<br>
+												<br>
+										</td>
+								</tr>
+ 
+								<tr class="Row">
+										<td align="right"><a href="{InstallLink_Src}">{InstallLink}</a></td>
+								</tr>
+						</table>
+				</td>
+		</tr>
+</table>
+<!-- END Panel Panel1 -->
+<!-- BEGIN Panel Panel2 -->
+<!-- BEGIN Record sql_environment -->
+<script language="javascript">
+function switchUpgrade(form, upg)
+{
+	if (upg)
+	{
+		form.SampleData.checked = false;
+		alert('{res:inst_upgrade_warning}');
+	}
+	setVisible("confirm",!upg);
+	form.SampleData.disabled = upg;
+}
+
+function setVisible(id,visible)
+{
+	document.getElementById(id).style.display = visible?"":"none";
+}
+function initUpgrade()
+{
+	switchUpgrade(document.forms["sql_environment"], document.forms["sql_environment"].UpgradeData.checked);
+}
+window.onload=initUpgrade;
+</script>
+<br>
+<form name="{HTMLFormName}" action="{Action}" method="post">
+		<table cellspacing="0" cellpadding="0" width="780" border="0">
+				<tr>
+						<td valign="top">
+								<table class="Header" cellspacing="0" cellpadding="0" border="0">
+										<tr>
+												<td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+												<th>{res:inst_step2}</th>
+ 
+												<td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+										</tr>
+								</table>
+ 
+								<table class="Record" cellspacing="0" cellpadding="0">
+										<tr class="Controls">
+												<td colspan="2">{res:inst_introduce2}<br>
+														<br>
+														<br>
+												</td>
+										</tr>
+ 
+										<!-- BEGIN Error -->
+										<tr class="Error">
+												<td colspan="2">{Error}</td>
+										</tr>
+										<!-- END Error -->
+
+										<tr class="Controls">
+												<th width="50%">{res:inst_site_url} *</th>
+												<td><input value="{SiteURL}" name="{SiteURL_Name}" size="40" maxlength="250" style="width:100%"></td> 
+										</tr>
+
+										<tr class="Footer">
+												<td colspan="2"><b>{res:inst_sql_environment_mssql}</b></td>
+										</tr>
+
+										<tr class="Controls">
+										  <th>{res:inst_sql_host} *</th>
+ 
+										  <td><input value="{db_host}" name="{db_host_Name}" type="text" maxlength="200" size="20"></td> 
+										</tr>
+										<tr class="Controls">
+										  <th>{res:inst_sql_database_name} *</th>
+ 
+										  <td><input value="{db_name}" name="{db_name_Name}" type="text" maxlength="200" size="20"></td> 
+										</tr>
+										<tr class="Controls">
+										  <th>{res:inst_sql_username}</th>
+ 
+										  <td><input value="{db_username}" name="{db_username_Name}" type="text" maxlength="200" size="20"></td> 
+										</tr>
+										<tr class="Controls">
+										  <th>{res:inst_sql_password}</th>
+ 
+										  <td><input value="{db_password}" name="{db_password_Name}" type="text" maxlength="200" size="20"></td> 
+										</tr>
+										<tr class="Controls">
+										  <th>{res:inst_sql_additional}</th>
+ 
+										  <td><input value="{db_additional}" name="{db_additional_Name}" type="text" maxlength="200" size="40" style="width:100%"></td> 
+										</tr>
+
+										<tr class="Controls">
+										  <th>{res:inst_upgrade_data}</th>
+ 
+										  <td><input type="checkbox" value="1" name="{UpgradeData_Name}" disabled {UpgradeData} onclick="switchUpgrade(this.form,this.checked)">&nbsp;</td>
+										</tr>
+
+										<tr class="Controls">
+										  <th>{res:inst_sample_data}</th>
+ 
+										  <td><input type="checkbox" value="1" name="{SampleData_Name}" {SampleData}>&nbsp;</td>
+										</tr>
+
+
+										<tr class="Footer">
+												<td colspan="2"><b>{res:inst_your_admin_account}</b></td>
+										</tr>
+ 
+										<tr class="Controls">
+												<th>{res:CCS_Login} *</th>
+ 
+												<td><input value="{user_login}" name="{user_login_Name}"></td>
+										</tr>
+ 
+										<tr class="Controls">
+												<th>{res:CCS_Password} *</th>
+ 
+												<td><input type="password" value="{user_password}" name="{user_password_Name}"></td>
+										</tr>
+ 
+
+										<tr class="Controls" id="confirm">
+										  <th>{res:inst_user_confirm_password}</th>
+ 
+										  <td><input type="password" value="{user_password_rep}" name="{user_password_rep_Name}"></td>
+										</tr>
+ 
+										<tr class="Bottom">
+												<td align="right" colspan="2">
+														<!-- BEGIN Button Update --><input class="Button"
+														 type="submit" value="{res:CCS_Update}" border="0" name="{Button_Name}"><!-- END Button Update --></td>
+										</tr>
+								</table>
+						</td>
+				</tr>
+		</table>
+</form>
+<!-- END Record sql_environment --><!-- END Panel Panel2 -->
+<!-- BEGIN Panel Panel3 --><br>
+<table cellspacing="0" cellpadding="0" width="780" border="0">
+		<tr>
+				<td valign="top">
+						<table class="Header" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+										<td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+										<th>{res:inst_finish}</th>
+ 
+										<td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+								</tr>
+						</table>
+ 
+						<table class="Record" cellspacing="0" cellpadding="0">
+								<tr class="Controls">
+										<td colspan="2">{res:inst_finish2}</td>
+								</tr>
+ 
+								<tr class="Row">
+										<td align="center" colspan="2">
+												<br>
+												<br>
+												<br>
+												<br>
+												<b>{res:inst_finish_desc}</b><br>
+												<br>
+												<br>
+												<br>
+												<br>
+										</td>
+								</tr>
+ 
+								<tr class="Row">
+										<td align="right"><a href="{Link2_Src}">{res:inst_start}</a></td>
+								</tr>
+						</table>
+				</td>
+		</tr>
+</table>
+<!-- END Panel Panel3 -->
+</center>
+</body>
+</html>

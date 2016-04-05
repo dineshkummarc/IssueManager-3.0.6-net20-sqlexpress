@@ -1,0 +1,49 @@
+<script language="javascript">
+function addParam(url, param, value)
+{
+	re = new RegExp('\&?'+param+'=[^\&\?$]*');
+	url = url.replace(re, '');
+	url = url.replace('?&', '?');
+	sep = url.indexOf('?')>=0?'&':'?';
+	return url+sep+param+'='+value;
+}
+</script>
+
+<table class="Header" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+    <th>{res:im_application_title}</th>
+    <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+  </tr>
+</table>
+<table class="Grid" cellspacing="0">
+  <tr class="Controls">
+    <td width="200"><nobr><b>{user}</b></nobr></td>
+    <td nowrap>
+	<a href="{Link1_Src}" class="menulink">{res:im_issue_list}</a>
+	&nbsp;&middot;&nbsp;
+    <a href="{Link2_Src}" class="menulink">{res:im_add_new_issue}</a>
+	&nbsp;&middot;&nbsp;
+    <a href="{Link3_Src}" class="menulink">{res:im_my_profile}</a>
+	&nbsp;&middot;&nbsp;
+
+	<!-- BEGIN Panel AdminLink -->
+	<a href="{Link5_Src}" class="menulink">{res:im_administration}</a>&nbsp;&middot;&nbsp;
+	<!-- END Panel AdminLink -->
+	<a href="{Link4_Src}" class="menulink">{res:im_logout}</a>
+	</td>
+		<td width="10" align="right" style="padding:0px">
+			<select style="font-size:11px" name="{style_Name}" onchange="if(this.selectedIndex>0)document.location.href=addParam(document.location.href, 'style', this.options[this.selectedIndex].value)">
+			  <option value="">{res:im_change_style}</option>
+			  {style_Options}
+			</select>
+		</td>
+		<td width="10" align="right" style="padding:0px">
+		  <select style="font-size:11px" class="Control" name="{locale_Name}" onchange="if(this.selectedIndex>0)document.location.href=addParam(document.location.href, 'locale', this.options[this.selectedIndex].value)">
+		    <option value="">{res:im_change_locale}</option>
+		 {locale_Options}
+		  </select>
+		</td>
+  </tr>
+</table>
+<br>

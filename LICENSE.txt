@@ -1,0 +1,99 @@
+LICENSE AGREEMENT
+UltraApps Issue Manager 3.0
+(Standard version)
+This software product, any printed materials, any on-line or electronic 
+documentation, and any and all copies and derivative works of such software 
+product and materials ("Software") are the copyrighted work of UltraApps, its 
+subsidiaries, licensors and/or its suppliers. All use of the Software is 
+governed by the terms of the End User License Agreement, which is provided 
+below ("License Agreement"). The Software is solely for use by end users 
+according to the terms of the License Agreement. Any use, reproduction or 
+redistribution of the Software not in accordance with the terms of the License 
+Agreement is expressly prohibited. If you do not agree with the terms of this 
+Agreement, you cannot install the software and must immediately delete or 
+destroy all copies of it in your possession.
+
+This software is distributed and available for FREE use under the following 
+terms and conditions:
+
+1. Definitions:
+1.1  "License" and  ''License Agreement'' mean this document.
+1.2  ''Modifications'' means any addition to or deletion from the substance or 
+structure of the Original Code. When Covered Code is released as a series of 
+files, a Modification is:
+    a) Any addition to or deletion from the contents of a file containing 
+Original Code or previous Modifications.
+    b) Any new file that contains any part of the Original Code or previous 
+Modifications.
+1.3  "You" (or "Your") means an individual or a legal entity exercising rights 
+under, and complying with all of the terms of this License. For legal entities, 
+"You'' includes any entity which controls, is controlled by, or is under common 
+control with You.
+1.4  "Software" means the software product (also known as program) that 
+includes this License or that this License pertains to, and all files included 
+with this product (including but not limited to programming source code, 
+HTML/layout files, images, configuration files, compiled software components, 
+documentation and this License).
+1.5  "UltraApps" means the original developer of this Software, known as 
+UltraApps organization, its owner or parent organization or in the absence of 
+such, the owner of the domain name UltraApps.com as of August 19th, 2001
+
+2. Terms and Conditions:
+2.1 Responsibilities. Within 15 days of installing this Software, You must 
+register as user of this software at {http://www.ultraapps.com}
+2.2  Usage and Fees. You may install and use this software free of charge on 
+any number of computers within Your company or organization, to be accessed by 
+any number of users.
+2.3 Modifications.
+    a) You may make modifications to this Software only for Your own internal 
+usage.
+    b) Once modified for Your own use, You may not distribute modified version 
+of this Software outside of Your company or organization.
+    c) Any derivative works based on this Software are considered to be the 
+property of UltraApps and are covered by this License. 
+2.4 Distribution. You may distribute this Software in its original form under 
+the following conditions:
+    a) You may charge not more than $20 per server for distributing this 
+Software to other users for installation on servers other than yours. You may 
+charge additional consulting fees for installation services. You may  not 
+charge usage fees that are determined by, or depend on number of users using 
+this Software.
+    b) You must assure that this Software is distributed unaltered, for example 
+by downloading its original version at {http://www.ultraapps.com}
+
+3. This License Agreement:
+3.1 Modifications. The provisions of this Agreement may be waived, altered, 
+amended, modified, or repealed, in whole or in part, only by UltraApps, via 
+written or email notice. However, this version of this Software must remain 
+free of charge.
+3.2 Termination. This License Agreement is effective until terminated. You may 
+terminate the License Agreement at any time by destroying the media containing 
+the Software or erasing all of the Software’s files and data from all computers 
+you have licensed the Software for. UltraApps may, at its discretion, terminate 
+this License Agreement in the event that you fail to comply with the terms and 
+conditions contained herein. In such event, you must immediately destroy the 
+media containing the Software or erase it from all computers you have installed 
+it on, or had installed on.
+3.3 Limitations. Neither UltraApps, its subsidiaries, affiliates or licensors 
+shall be liable in any way for loss or damage of any kind resulting from the 
+use of the Software including, but not limited to, loss of goodwill, work 
+stoppage, computer failure or malfunction, data loss, data corruption or any 
+and all other commercial damages or losses. Some states do not allow the 
+exclusion or limitation of incidental or consequential damages, or allow 
+limitations on how long an implied warranty lasts, so the above limitations may 
+not apply to you.
+3.4 Remedy. You hereby agree that UltraApps would be irreparably damaged if the 
+terms of this License Agreement were not enforced, and therefore you agree that 
+UltraApps shall be entitled, without bond, other security, or proof of damages, 
+to the minimum payment of $100 (USD) per incident, or the actual or potential 
+losses incurred by UltraApps, whichever is higher .
+
+You hereby acknowledge that you have read and understand the foregoing License 
+and agree that the action of installing the Software is an acknowledgment of 
+your agreement to be bound by the terms and conditions of the License contained 
+herein. You also acknowledge and agree that this License is the complete and 
+exclusive statement of the agreement between UltraApps and you and that the 
+License Agreement supersedes any prior or contemporaneous agreement, either 
+oral or written (including inconsistent statements in written materials and 
+online help accompanying the Software), and any other communications between 
+UltraApps and you.

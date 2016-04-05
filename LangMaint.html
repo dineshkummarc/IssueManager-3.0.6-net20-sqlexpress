@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_languages}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link rel="stylesheet" type="text/css" href="Styles/{CCS_Style}/Style.css">
+</head>
+<body>
+{Header}
+{AdminMenu}
+<table>
+<tr>
+<td valign="top">
+<!-- BEGIN Grid locales -->
+<table cellspacing="0" cellpadding="0" border="0" width="200">
+  <tr>
+    <td valign="top">
+      <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <tr>
+          <td class="HeaderLeft"><img border="0" src="Styles/{CCS_Style}/Images/Spacer.gif"></td>
+          <th>{res:im_languages}</th>
+          <td class="HeaderRight"><img border="0" src="Styles/{CCS_Style}/Images/Spacer.gif"></td>
+        </tr>
+      </table>
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>{res:im_locale_name}</th>
+ 
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td><a href="{locale_name_Src}">{locale_name}</a>&nbsp;</td> 
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="1">{res:CCS_NoRecords}</td> 
+        </tr>
+ <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="1">[<a href="{locales_Insert_Src}">{res:CCS_InsertLink}</a>] </td> 
+        </tr>
+      </table>
+ </td> 
+  </tr>
+</table>
+<!-- END Grid locales -->
+</td>
+<td valign="top">
+<!-- BEGIN Record locales1 -->
+<form method="post" action="{Action}" name="{HTMLFormName}">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+          <tr>
+            <td class="HeaderLeft"><img border="0" src="Styles/{CCS_Style}/Images/Spacer.gif"></td>
+            <th>{res:im_language}</th>
+            <td class="HeaderRight"><img border="0" src="Styles/{CCS_Style}/Images/Spacer.gif"></td>
+          </tr>
+        </table>
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:im_locale_name}</th>
+ 
+            <td><input type="text" name="{locale_name_Name}" value="{locale_name}" maxlength="50" size="50"></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_Insert --><input class="Button" name="{Button_Name}" type="submit" value="{res:CCS_Insert}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="Button" name="{Button_Name}" type="submit" value="{res:CCS_Update}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="Button" name="{Button_Name}" type="submit" value="{res:CCS_Delete}"><!-- END Button Button_Delete --></td> 
+          </tr>
+        </table>
+ </td> 
+    </tr>
+  </table>
+</form>
+<!-- END Record locales1 -->
+</td>
+</tr>
+</table>
+{res:im_lang_instructions}
+{Footer}
+
+</body>
+</html>

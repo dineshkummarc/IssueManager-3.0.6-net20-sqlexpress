@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_issue_list}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link rel="stylesheet" type="text/css" href="Styles/{CCS_Style}/Style.css">
+</head>
+<body>
+{Header} {AdminMenu} 
+<!-- BEGIN Record issuesSearch -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <form name="issuesSearch" action="{Action}" method="post">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+            <th>{res:im_search}</th>
+ 
+            <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:im_keyword}&nbsp;</th>
+ 
+            <td><input maxlength="100" size="50" value="{s_issue_name}" name="s_issue_name">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_priority}&nbsp;</th>
+ 
+            <td>
+              <select name="s_priority_id">
+                <option value="" selected>{res:im_all}</option>
+                {s_priority_id_Options}
+              </select>
+ &nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_status}</th>
+ 
+            <td>
+              <select name="s_status_id">
+                <option value="" selected>{res:im_all}</option>
+                {s_status_id_Options}
+              </select>
+ &nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_status_is_not}</th>
+ 
+            <td>
+              <select name="s_notstatus_id">
+                <option value="0" selected>{res:im_show_all}</option>
+                {s_notstatus_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_assigned_to}&nbsp;</th>
+ 
+            <td>
+              <select name="s_assigned_to">
+                <option value="" selected>{res:im_anybody}</option>
+                {s_assigned_to_Options}
+              </select>
+ &nbsp;</td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button DoSearch --><input class="Button" type="submit" value="{res:CCS_Search}" name="DoSearch"><!-- END Button DoSearch -->&nbsp;</td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+</table>
+<br>
+<!-- END Record issuesSearch -->
+<!-- BEGIN Grid issues -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+          <th>{res:im_issue_list}</th>
+ 
+          <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th style="text-align:center">
+          <!-- BEGIN Sorter Sorter_issue_id --><a href="{Sort_URL}">{res:im_issue_no}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_issue_id -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_issue_name --><a href="{Sort_URL}">{res:im_issue_name}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_issue_name -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter1 --><a href="{Sort_URL}">{res:im_priority}</a>
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter1 -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_status_id --><a href="{Sort_URL}">{res:im_status}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_status_id -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_assigned_to --><a href="{Sort_URL}">{res:im_assigned_to}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_assigned_to -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_date_submitted --><a href="{Sort_URL}">{res:im_date_submitted}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_date_submitted -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_date_modified --><a href="{Sort_URL}">{res:im_date_modified}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_date_modified -->&nbsp;</th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_date_resolved --><a href="{Sort_URL}">{res:im_date_resolved}</a> 
+          <!-- BEGIN Asc_On --><img src="Styles/{CCS_Style}/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="Styles/{CCS_Style}/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_date_resolved -->&nbsp;</th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td align="center">{issue_id}&nbsp;</td> 
+          <td><a href="{issue_name_Src}">{issue_name}</a>&nbsp;</td> 
+          <td>{priority}&nbsp;</td> 
+          <td>{status_id}&nbsp;</td> 
+          <td>{assigned_to}&nbsp;</td> 
+          <td>{date_submitted}&nbsp;</td> 
+          <td>{date_modified}&nbsp;</td> 
+          <td>{date_resolved}&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="8">{res:CCS_NoRecords}&nbsp;</td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td nowrap colspan="8">
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}"><img src="Styles/{CCS_Style}/Images/First.gif" border="0"></a> <!-- END First_On -->
+            <!-- BEGIN First_Off --><img src="Styles/{CCS_Style}/Images/FirstOff.gif" border="0"><!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="Styles/{CCS_Style}/Images/Prev.gif" border="0"></a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off --><img src="Styles/{CCS_Style}/Images/PrevOff.gif" border="0"><!-- END Prev_Off -->&nbsp;
+            <!-- BEGIN Pages -->
+            <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+            <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="Styles/{CCS_Style}/Images/Next.gif" border="0"></a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off --><img src="Styles/{CCS_Style}/Images/NextOff.gif" border="0"><!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}"><img src="Styles/{CCS_Style}/Images/Last.gif" border="0"></a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off --><img src="Styles/{CCS_Style}/Images/LastOff.gif" border="0"><!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid issues -->{Footer} 
+</body>
+</html>

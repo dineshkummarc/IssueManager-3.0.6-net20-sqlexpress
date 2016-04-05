@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_settings}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link href="Styles/{CCS_Style}/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{Header} {AdminMenu} 
+<!-- BEGIN Record settings -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <form name="settings" action="{Action}" method="post">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+            <th>{res:im_edit_settings}</th>
+ 
+            <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="3">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:im_upload_enabled}&nbsp;</th>
+ 
+            <td><input type="checkbox" value="1" name="upload_enabled" {upload_enabled}>&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_file_ext}&nbsp;</th>
+ 
+            <td><input size="50" value="{file_extensions}" name="file_extensions">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_file_path}&nbsp;</th>
+ 
+            <td><input size="50" value="{file_path}" name="file_path">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_notify_new_from}&nbsp;</th>
+ 
+            <td><input maxlength="50" size="50" value="{notify_new_from}" name="notify_new_from">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_notify_new_subject}&nbsp;</th>
+ 
+            <td><input size="50" value="{notify_new_subject}" name="notify_new_subject">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_notify_new_body}&nbsp;</th>
+ 
+            <td><textarea style="WIDTH: 321px; HEIGHT: 92px" name="notify_new_body" rows="4" cols="50">{notify_new_body}</textarea>&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_notify_change_from}&nbsp;</th>
+ 
+            <td><input maxlength="50" size="50" value="{notify_change_from}" name="notify_change_from">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_notify_change_subject}&nbsp;</th>
+ 
+            <td><input size="50" value="{notify_change_subject}" name="notify_change_subject">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:im_notify_change_body}&nbsp;</th>
+ 
+            <td><textarea style="WIDTH: 321px; HEIGHT: 92px" name="notify_change_body" rows="5" cols="50">{notify_change_body}</textarea>&nbsp;</td>
+          </tr>
+ 
+			<tr class="Controls">
+			  <th>{res:im_email_component}&nbsp;</th>
+			  <td>
+			    <select name="{email_component_Name}">
+			      {email_component_Options} 
+			    </select>
+			  </td> 
+			</tr>
+			<tr class="Controls">
+			  <th>{res:im_smtp_host}&nbsp;</th>
+ 
+			  <td><input type="text" name="{smtp_host_Name}" value="{smtp_host}" size="30">&nbsp;</td> 
+			</tr>
+ 
+          <tr class="Footer">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Update --><input class="Button" type="submit" value="{res:CCS_Update}" name="Update"><!-- END Button Update -->&nbsp;</td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+</table>
+<!-- END Record settings -->{Footer} 
+</body>
+</html>

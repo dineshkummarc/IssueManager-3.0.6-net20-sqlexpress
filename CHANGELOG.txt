@@ -1,0 +1,38 @@
+3.0.2	
+	first public version available after rewrite
+
+3.0.3
+	not released
+
+3.0.4
+	user manual included
+	fixed dynamic style issues on IssueChange page
+	increased attachment size limit to 1000000
+	displaying issue # in issue details
+	displaying issue # in issue maintenance
+	sorting user dropdown lists by name
+
+3.0.5 (PHP only)
+	fixed potential data loss issue during installation
+	improved PHP installer
+
+3.0.6
+	Common fixes:
+	fixed export from 2nd page issue
+	fixed export page size
+	removed Response and Description captions from issue details
+	fixed CSS styles to interpret Separator class properly
+	fixing upload masks setting during upgrade
+
+	ASP:
+	SMTP host setting used if using CDOSYS
+	using true neutral date format for database operations on SQL Server
+	
+	PHP:
+	fixed export page HTTP headers to force Excel opening
+
+	.NET:
+	fixed mailing ignoring SMTP host setting
+	fixed possible connection pool timeout issue
+	fixed issue with deleting attachments on issue delete
+	created .NET+MSSQL variant

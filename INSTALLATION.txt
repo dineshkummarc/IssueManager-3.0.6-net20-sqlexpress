@@ -1,0 +1,50 @@
+IssueManager Standard version 3.0
+INSTALLATION GUIDE (.NET 2.0 version)
+----------------------------------------------------------------------------------
+
+REQUIREMENTS:
+
+- Windows 2000, XP Pro/Media Center (not Home), 2003
+- Microsoft Internet Information Services (IIS) web server v >= 5.x
+- .NET Framework v2.0
+- MDAC drivers for Access database version
+- SQL Server 2005 (Express) for SQL Express database version
+- server administrative rights
+- possibility to create IIS Virtual Directories
+- possibility to grant NTFS permissions to web folders
+
+
+INSTALLATION STEPS:
+
+1. Extract archive contents to some directory under your web root directory.
+By default IIS web server uses C:\Inetpub\wwwroot directory, so create extract files
+to a folder like C:\Inetpub\wwwroot\IssueManager.
+
+2. Create IIS Virtual Directory for you new web application. Follow descriptions:
+http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/5adfcce1-030d-45b8-997c-bdbfa08ea459.mspx
+
+You can right-click your application folder and choose Properties option. Choose Web Sharing tab and select Share this folder.
+
+3. Grant NTFS Write (or Modify) permissions on database and upload folders to your ASP.NET default identity.
+Update permissions to the following subfolders:
+
+App_Data
+uploads
+temp
+
+They require Modify permissions granted (allowed) for ASP.NET identity which is ASPNET user account by default
+(or NETWORK SERVICE in Windows 2003).
+
+To grant permissions right click your folder, choose Properties and select Security tab. Lookup account if not listed.
+
+4. Navigate your application in your browser. If you've installed the application in C:\Inetpub\wwwroot\IssueManager
+then navigate http://localhost/IssueManager
+
+5. Log-in using default administrator account:
+
+username: admin
+password: admin
+
+6. Use Administration/System Configuration page to setup application defaults.
+
+7. Make sure to change administrator's account password.

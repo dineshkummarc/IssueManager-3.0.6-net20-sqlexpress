@@ -1,0 +1,8 @@
+//AssemblyInfo  @0-935C1A1E
+using System;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+
+[assembly: AssemblyCulture("pl")]
+//End AssemblyInfo 
+

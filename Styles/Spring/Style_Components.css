@@ -1,0 +1,682 @@
+/* CCSTheme v 3.x */
+/* General */
+
+
+
+.HeaderSpring {
+	width: 100%;
+	}
+
+.HeaderSpring th { 
+	font-family: Arial; font-size: 90%;
+	padding: 3px;
+	background-color: #579690; color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+	}
+
+.HeaderSpring a:link { 
+	color: #ffffff;
+	}
+
+.HeaderSpring a:visited { 
+	color: #ffffff;
+	}
+
+.HeaderSpring a:hover, .CaptionSpring a:active { 
+	color: #ffffff; text-decoration: none;
+	}
+
+.HeaderLeftSpring { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightSpring { 
+	background-image: url('Images/HeaderRight.gif');
+	}
+
+.HeaderLeftSpring img{
+	width: 9px;
+	}
+
+.HeaderRightSpring img{
+	width: 12px;
+	}
+
+
+/* Grid Options */
+.GridSpring { 
+	border: solid 1px #c2ddea; border-bottom: 0px;
+	width: 100%;
+	}
+
+.CaptionSpring th { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #c2ddea; color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionSpring td { 
+	font-family: Arial; font-size: 70%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #c2ddea; color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionSpring a:link { 
+	color: #000000;
+	}
+
+.CaptionSpring a:visited { 
+	color: #000000;
+	}
+
+.CaptionSpring a:hover, .CaptionSpring a:active { 
+	color: #ff2626;
+	}
+
+.CaptionSpring img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionSpring input {
+	vertical-align: middle;
+	}
+
+.RowSpring th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #f9f9f9; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	vertical-align: top;
+	background-color: #f9f9f9; 
+	color: #000000;
+	}
+
+.RowSpring a:link { 
+	color: #1f4cd2;
+	}
+
+.RowSpring a:visited { 
+	color: #871487;
+	}
+
+.RowSpring a:hover, .RowSpring a:active { 
+	color: #ff2626;
+	}
+
+.SeparatorSpring{
+	color: #579690;
+	}
+
+.SeparatorSpring td{
+	height: 1px;
+	}
+
+
+.AltRowSpring th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #f9f9f9; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	vertical-align: top;
+	background-color: #eaf3f9; 
+	color: #000000;
+	}
+
+.AltRowSpring a:link { 
+	color: #1f4cd2;
+	}
+
+.AltRowSpring a:visited { 
+	color: #871487;
+	}
+
+.AltRowSpring a:hover, .AltRowSpring a:active { 
+	color: #ff2626;
+	}
+
+.NoRecordsSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #f9f9f9; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FooterSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #c2ddea; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.FooterSpring a:link { 
+	color: #1f4cd2;
+	}
+
+.FooterSpring a:visited { 
+	color: #871487;
+	}
+
+.FooterSpring a:hover, .FooterSpring a:active { 
+	color: #ff2626;
+	}
+
+.FooterSpring img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterSpring input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordSpring { 
+	border: solid 1px #c2ddea; border-bottom: 0px;
+	width: 100%;
+	}
+
+.ErrorSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f9f9f9; 
+	}
+
+.ControlsSpring th { 
+	font-family: Arial; font-size: 70%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #f9f9f9; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	vertical-align: top;
+	background-color: #f9f9f9; 
+	color: #000000;
+	}
+
+.BottomSpring td { 
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #c2ddea; color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.BottomSpring a:link { 
+	color: #1f4cd2;
+	}
+
+.BottomSpring a:visited { 
+	color: #871487;
+	}
+
+.BottomSpring a:hover, .CaptionSpring a:active { 
+	color: #ff2626;
+	}
+
+.BottomSpring img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomSpring input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionSpring th{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	white-space: nowrap;
+	text-align: left; 
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #eaf3f9; 
+	color: #000000;
+	}
+
+.GroupCaptionSpring td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f9f9f9; 
+	color: #000000;
+	}
+
+.GroupCaptionSpring a:link {
+	color: #000000;
+	}
+
+.GroupCaptionSpring a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionSpring a:hover, .GroupCaptionSpring a:active{
+	color: #ff2626;
+	}
+
+.GroupFooterSpring td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #c2ddea; 
+	color: #000000;
+	}
+
+.GroupFooterSpring a:link {
+	color: #1f4cd2;
+	}
+
+.GroupFooterSpring a:visited{
+	color: #871487;
+	}
+
+.GroupFooterSpring a:hover, .GroupFooterSpring a:active{
+	color: #ff2626;
+	}
+
+.GroupFooterSpring img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterSpring input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalSpring td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #eaf3f9; 
+	color: #000000;
+	border-bottom: 2px solid #579690;
+	}
+
+.SubTotalSpring a:link {
+	color: #1f4cd2;
+	}
+
+.SubTotalSpring a:visited{
+	color: #871487;
+	}
+
+.SubTotalSpring a:hover, .SubTotalSpring a:active{
+	color: #ff2626;
+	}
+
+.TotalSpring td{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #eaf3f9; 
+	color: #000000;
+	}
+
+.TotalSpring a:link {
+	color: #1f4cd2;
+	}
+
+.TotalSpring a:visited{
+	color: #871487;
+	}
+
+.TotalSpring a:hover, .TotalSpring a:active{
+	color: #ff2626;
+	}
+
+/* Form Options */
+.ButtonSpring { 
+	background-color: #eaf3f9; color: #000000; border: solid 1px #579690; padding: 2px; font-weight: bold; font-size: 85%; font-family: Tahoma;
+	}
+
+/* Calendar */
+
+.CalendarSpring { 
+	border: solid 1px #c2ddea;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameSpring{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #eaf3f9; 
+	color: #000000;
+	}
+
+.CalendarWeekdayNameSpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarWeekdayNameSpring a:visited{
+	color: #871487;
+	}
+
+.CalendarWeekdayNameSpring a:hover, .CalendarWeekdayNameSpring a:active{
+	color: #ff2626;
+	}
+
+.CalendarWeekendNameSpring{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #eaf3f9;	
+	color: #000000;
+	}
+
+.CalendarWeekendNameSpring a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNameSpring a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNameSpring a:link, .CalendarWeekendNameSpring a:visited{
+	color: #ff2626;
+	}
+
+/* Calendar Day */
+.CalendarDaySpring{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	text-align: center;
+	background-color: #f9f9f9;	
+	color: #000000;
+	}
+
+.CalendarDaySpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarDaySpring a:visited{
+	color: #871487;
+	}
+
+.CalendarDaySpring a:hover, .CalendarDaySpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendSpring{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	text-align: center;
+	background-color: #eaf3f9;	
+	color: #000000;
+	}
+
+.CalendarWeekendSpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarWeekendSpring a:visited{
+	color: #871487;
+	}
+
+.CalendarWeekendSpring a:hover, .CalendarWeekendSpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Today */
+.CalendarTodaySpring {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #c2ddea; border-top: 1px solid #c2ddea;
+	text-align: center;
+	background-color: #f9f9f9;	
+	color: #000000;
+	}
+
+.CalendarTodaySpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarTodaySpring a:visited{
+	color: #871487;
+	}
+
+.CalendarTodaySpring a:hover, .CalendarTodaySpring a:active {
+	color: #ff2626;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodaySpring {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #c2ddea; border-top: 1px solid #c2ddea;
+	text-align: center;
+	background-color: #eaf3f9;	
+	color: #000000;
+	}
+
+.CalendarWeekendTodaySpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarWeekendTodaySpring a:visited{
+	color: #871487;
+	}
+
+.CalendarWeekendTodaySpring a:hover, .CalendarWeekendTodaySpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDaySpring{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	text-align: center;
+	background-color: #f9f9f9;	
+	color: #579690;
+	}
+
+.CalendarOtherMonthDaySpring a:link {
+	color: #579690;
+	}
+
+.CalendarOtherMonthDaySpring a:visited{
+	color: #579690;
+	}
+
+.CalendarOtherMonthDaySpring a:hover, .CalendarOtherMonthDaySpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodaySpring {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #c2ddea; border-top: 1px solid #c2ddea;
+	text-align: center;
+	background-color: #f9f9f9;	
+	color: #579690;
+	}
+
+.CalendarOtherMonthTodaySpring a:link {
+	color: #579690;
+	}
+
+.CalendarOtherMonthTodaySpring a:visited{
+	color: #579690;
+	}
+
+.CalendarOtherMonthTodaySpring a:hover, .CalendarOtherMonthTodaySpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendSpring {
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	text-align: center;
+	background-color: #eaf3f9;	
+	color: #579690;
+	}
+
+.CalendarOtherMonthWeekendSpring a:link {
+	color: #579690;
+	}
+
+.CalendarOtherMonthWeekendSpring a:visited{
+	color: #579690;
+	}
+
+.CalendarOtherMonthWeekendSpring a:hover, .CalendarOtherMonthWeekendSpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodaySpring {
+	font-family: Arial; font-size: 70%;
+	padding: 1px;
+	border: 2px solid #c2ddea; border-top: 1px solid #c2ddea;
+	text-align: center;
+	color: #579690;
+	background-color: #eaf3f9;	
+	}
+
+.CalendarOtherMonthWeekendTodaySpring a:link {
+	color: #579690;
+	}
+
+.CalendarOtherMonthWeekendTodaySpring a:visited{
+	color: #579690;
+	}
+
+.CalendarOtherMonthWeekendTodaySpring a:hover, .CalendarOtherMonthWeekendTodaySpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDaySpring{
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	border-bottom: solid 1px #c2ddea;
+	background-color: #c2ddea;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+
+.CalendarSelectedDaySpring a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDaySpring a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDaySpring a:hover, .CalendarSelectedDaySpring a:active{
+	color: #ff2626;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorSpring {
+	font-family: Arial; font-size: 70%;
+	padding: 3px;
+	background-color: #c2ddea; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.CalendarNavigatorSpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarNavigatorSpring a:visited{
+	color: #871487;
+	}
+
+.CalendarNavigatorSpring a:hover, .CalendarNavigatorSpring a:active{
+	color: #ff2626;
+	}
+
+.CalendarNavigatorSpring img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+/* Calendar Extra */
+.CalendarEventSpring{
+	font-size: 80%;
+	text-align: left;
+	}
+
+.CalendarEventSpring a:link {
+	color: #1f4cd2;
+	}
+
+.CalendarEventSpring a:visited{
+	color: #871487;
+	}
+
+.CalendarEventSpring a:hover, .CalendarEventSpring a:active{
+	color: #ff2626;
+	}

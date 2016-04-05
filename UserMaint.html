@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>{res:im_application_title} - {res:im_user}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link href="Styles/{CCS_Style}/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{Header} {AdminMenu} 
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <!-- BEGIN Record users -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <form name="users" action="{Action}" method="post">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:im_user}</th>
+ 
+                  <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="3">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:CCS_Login}&nbsp;*</th>
+ 
+                  <td><input maxlength="15" size="15" value="{login}" name="login">&nbsp;</td>
+                </tr>
+ 
+				<tr class="Controls">
+				  <th>{res:CCS_Password}&nbsp;*</th>
+ 
+				  <td>
+				    <input type="password" maxlength="15" size="15" value="{new_pass}" name="{new_pass_Name}">&nbsp;{res:im_new_password}<br>
+				    <input type="password" maxlength="15" size="15" value="{rep_pass}" name="{rep_pass_Name}">&nbsp;{res:im_repeat_password}</td> 
+				</tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_security_level}&nbsp;</th>
+ 
+                  <td>
+                    <select name="security_level">
+                      {security_level_Options}
+                    </select>
+ &nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_name}&nbsp;*</th>
+ 
+                  <td><input maxlength="50" size="50" value="{user_name}" name="user_name">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_email}&nbsp;*</th>
+ 
+                  <td><input maxlength="50" size="50" value="{email}" name="email">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_allow_upload}&nbsp;</th>
+ 
+                  <td><input type="checkbox" value="1" name="allow_upload" {allow_upload}>&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_notify_new}&nbsp;</th>
+ 
+                  <td><input type="checkbox" value="1" name="notify_new" {notify_new}>&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_notify_original}&nbsp;</th>
+ 
+                  <td><input type="checkbox" value="1" name="notify_original" {notify_original}>&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:im_notify_reassignment}&nbsp;</th>
+ 
+                  <td><input type="checkbox" value="1" name="notify_reassignment" {notify_reassignment}>&nbsp;</td>
+                </tr>
+ 
+                <tr class="Footer">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Insert --><input class="Button" type="submit" value="{res:CCS_Insert}" name="Insert"><!-- END Button Insert -->
+                    <!-- BEGIN Button Update --><input class="Button" type="submit" value="{res:CCS_Update}" name="Update"><!-- END Button Update -->
+                    <!-- BEGIN Button Delete --><input class="Button" type="submit" value="{res:CCS_Delete}" name="Delete"><!-- END Button Delete -->
+                    <!-- BEGIN Button Cancel --><input class="Button" type="submit" value="{res:CCS_Cancel}" name="Cancel"><!-- END Button Cancel -->&nbsp;</td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <!-- END Record users --></td>
+  </tr>
+</table>
+{Footer} 
+</body>
+</html>

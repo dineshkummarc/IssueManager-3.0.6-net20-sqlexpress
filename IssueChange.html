@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>{res:im_application_title} - {res:im_issue_change}</title>
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link rel="stylesheet" type="text/css" href="Styles/{CCS_Style}/Style.css">
+</head>
+<body>
+{Header} 
+<table width="100%">
+  <tr>
+    <td valign="top" width="50%">
+      <!-- BEGIN Grid issue -->
+        <!-- BEGIN Row -->
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+          <th>{res:im_issue_name} #{issue_id}</th>
+ 
+          <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Record" cellspacing="0" cellpadding="0">
+
+        <tr class="Controls">
+          <td colspan="2"><b>{issue_name}</b>&nbsp;</td>
+        </tr>
+ 
+        <tr class="Separator">
+          <td colspan="2"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+        </tr>
+ 
+        <tr class="Controls">
+          <td colspan="2">{issue_desc}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Separator">
+          <td colspan="2"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_user_submitted}&nbsp;</td> 
+          <td width="100%">{user_id}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_date_submitted}&nbsp;</td> 
+          <td>{date_submitted}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_version}&nbsp;</td> 
+          <td>{version}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_tested}&nbsp;</td> 
+          <td>{tested}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_approved}&nbsp;</td> 
+          <td>{approved}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_assigned_to_orig}&nbsp;</td> 
+          <td>{assigned_to_orig}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_assigned_to}&nbsp;</td> 
+          <td>{assigned_to}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_priority}&nbsp;</td> 
+          <td>{priority_id}&nbsp;</td>
+        </tr>
+ 
+        <tr class="AltRow">
+          <td nowrap>{res:im_status}&nbsp;</td> 
+          <td>{status_id}&nbsp;</td>
+        </tr>
+
+      </table>
+	  <!-- END Row -->
+      <!-- END Grid issue -->
+      <!-- BEGIN Grid files --><br>
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+          <th>{res:im_list_of_files}</th>
+ 
+          <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>{res:im_file_name}</th>
+ 
+          <th>{res:im_uploaded_by}</th>
+ 
+          <th>{res:im_date_uploaded}</th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td><a href="{file_name_Src}" target="_blank">{file_name}</a>&nbsp;</td> 
+          <td>{uploaded_by}&nbsp;</td> 
+          <td>{date_uploaded}&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td class="NoRecords" colspan="3">{res:CCS_NoRecords}&nbsp;</td>
+        </tr>
+        <!-- END NoRecords -->
+      </table>
+      <!-- END Grid files -->
+      <!-- BEGIN Record issues --><br>
+      <form name="{HTMLFormName}" action="{Action}" method="post" enctype="{HTMLFormEnctype}">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+            <th>{res:im_response}</th>
+ 
+            <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:im_response}&nbsp;*</td> 
+          <td width="100%"><textarea style="WIDTH: 100%" name="{issue_resp_Name}" rows="3" cols="50">{issue_resp}</textarea></td>
+        </tr>
+ 
+        <tr class="Controls">
+          <th>{res:im_assigned_to}&nbsp; *</th>
+ 
+          <td>
+            <select name="{assigned_to_Name}">
+              {assigned_to_Options}
+            </select>
+ </td>
+        </tr>
+ 
+        <tr class="Controls">
+          <th>{res:im_priority}&nbsp;*</th>
+ 
+          <td>
+            <select name="priority_id">
+              {priority_id_Options}
+            </select>
+ </td>
+        </tr>
+ 
+        <tr class="Controls">
+          <th>{res:im_status}&nbsp;*</th>
+ 
+          <td>
+            <select name="status_id">
+              {status_id_Options}
+            </select>
+ </td>
+        </tr>
+ 
+        <tr class="Controls">
+          <th>{res:im_version}&nbsp;</th>
+ 
+          <td><input maxlength="10" size="10" value="{version}" name="version"></td>
+        </tr>
+ 
+        <tr class="Controls">
+          <th>{res:im_tested}&nbsp;</th>
+ 
+          <td><input type="checkbox" value="1" name="tested" {tested}></td>
+        </tr>
+ 
+        <tr class="Controls">
+          <th>{res:im_approved}&nbsp;</th>
+ 
+          <td><input type="checkbox" value="1" name="approved" {approved}></td>
+        </tr>
+ 
+        <!-- BEGIN Panel UploadControls -->
+        <tr class="Controls">
+          <th>{res:im_file}</th>
+ 
+          <td>
+            <!-- BEGIN FileUpload attachment --><input type="hidden" value="{State}" name="{ControlName}">
+            <!-- BEGIN Info -->&nbsp;{FileName}&nbsp;{FileSize}&nbsp;{res:CCS_Bytes}.<!-- END Info -->
+            <!-- BEGIN Upload --><input type="file" name="{FileControl}"><!-- END Upload -->
+            <!-- BEGIN DeleteControl -->{res:CCS_Delete} <input type="checkbox" name="{DeleteControl}" {DeleteChecked}><!-- END DeleteControl --><!-- END FileUpload attachment --></td>
+        </tr>
+ <!-- END Panel UploadControls -->
+        <tr class="Footer">
+          <td colspan="2">
+            <!-- BEGIN Button Insert --><input class="Button" type="submit" value="{res:CCS_Insert}" name="Insert"><!-- END Button Insert -->&nbsp;</td>
+        </tr>
+      </table>
+      <input type="hidden" value="{FormAction}" name="{FormAction_Name}"><input type="hidden" value="{date_now}" name="{date_now_Name}">
+    </form>
+    <!-- END Record issues --></td> 
+  <td valign="top" width="50%" rowspan="2">
+    <!-- BEGIN Grid responses1 -->
+    <table class="Header" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td class="HeaderLeft"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td> 
+        <th>{res:im_response_history}</th>
+ 
+        <td class="HeaderRight"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+      </tr>
+    </table>
+ 
+    <table class="Grid" cellspacing="0" cellpadding="0">
+      <!-- BEGIN Row -->
+ 
+      <tr class="Row">
+        <td colspan="2">{response}&nbsp;</td>
+      </tr>
+ 
+      <tr class="AltRow">
+        <td nowrap>{res:im_user_submitted}&nbsp;</td> 
+        <td width="100%">{user_id}&nbsp;</td>
+      </tr>
+ 
+      <tr class="AltRow">
+        <td nowrap>{res:im_date_response}&nbsp;</td> 
+        <td>{date_response}&nbsp;</td>
+      </tr>
+ 
+      <tr class="AltRow">
+        <td nowrap>{res:im_assigned_to}&nbsp;</td> 
+        <td>{assigned_to}&nbsp;</td>
+      </tr>
+ 
+      <tr class="AltRow">
+        <td nowrap>{res:im_priority}</td> 
+        <td>{priority_id}&nbsp;</td>
+      </tr>
+ 
+      <tr class="AltRow">
+        <td nowrap>{res:im_status}</td> 
+        <td>{status_id}&nbsp;</td>
+      </tr>
+ <!-- END Row -->
+      <!-- BEGIN Separator -->
+      <tr class="Separator">
+        <td colspan="2"><img src="Styles/{CCS_Style}/Images/Spacer.gif" border="0"></td>
+      </tr>
+      <!-- END Separator -->
+      <tr class="Footer">
+        <td colspan="2">
+          <!-- BEGIN Navigator Navigator -->
+          <!-- BEGIN First_On --><a href="{First_URL}"><img src="Styles/{CCS_Style}/Images/First.gif" border="0"></a> <!-- END First_On -->
+          <!-- BEGIN First_Off --><img src="Styles/{CCS_Style}/Images/FirstOff.gif" border="0"><!-- END First_Off -->
+          <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="Styles/{CCS_Style}/Images/Prev.gif" border="0"></a> <!-- END Prev_On -->
+          <!-- BEGIN Prev_Off --><img src="Styles/{CCS_Style}/Images/PrevOff.gif" border="0"><!-- END Prev_Off -->&nbsp; 
+          <!-- BEGIN Pages -->
+          <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+          <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+          <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="Styles/{CCS_Style}/Images/Next.gif" border="0"></a> <!-- END Next_On -->
+          <!-- BEGIN Next_Off --><img src="Styles/{CCS_Style}/Images/NextOff.gif" border="0"><!-- END Next_Off -->
+          <!-- BEGIN Last_On --><a href="{Last_URL}"><img src="Styles/{CCS_Style}/Images/Last.gif" border="0"></a> <!-- END Last_On -->
+          <!-- BEGIN Last_Off --><img src="Styles/{CCS_Style}/Images/LastOff.gif" border="0"><!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp;</td>
+      </tr>
+    </table>
+    <!-- END Grid responses1 --></td>
+</tr>
+</table>
+{Footer} 
+</body>
+</html>

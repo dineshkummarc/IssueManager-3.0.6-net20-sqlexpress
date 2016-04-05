@@ -1,0 +1,682 @@
+/* CCSTheme v 3.x */
+/* General */
+
+
+
+.HeaderLollipop {
+	width: 100%;
+	}
+
+.HeaderLollipop th { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: center;
+	padding: 3px;
+	background-color: #bf437f; color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+	}
+
+.HeaderLollipop a:link { 
+	color: #ffffff;
+	}
+
+.HeaderLollipop a:visited { 
+	color: #ffffff;
+	}
+
+.HeaderLollipop a:hover, .CaptionLollipop a:active { 
+	color: #ffffff; text-decoration: none;
+	}
+
+.HeaderLeftLollipop { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightLollipop { 
+	background-image: url('Images/HeaderRight.gif');
+	}
+
+.HeaderLeftLollipop img{
+	width: 12px;
+	}
+
+.HeaderRightLollipop img{
+	width: 14px;
+	}
+
+
+/* Grid Options */
+.GridLollipop { 
+	border-left: 1px solid #bf437f; border-bottom: 1px solid #bf437f;
+	width: 100%;
+	}
+
+.CaptionLollipop th { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionLollipop td { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionLollipop a:link { 
+	color: #000000;
+	}
+
+.CaptionLollipop a:visited { 
+	color: #000000;
+	}
+
+.CaptionLollipop a:hover, .CaptionLollipop a:active { 
+	color: #ff0000;
+	}
+
+.CaptionLollipop img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionLollipop input {
+	vertical-align: middle;
+	}
+
+.RowLollipop th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	vertical-align: top;
+	background-color: #f1efec; 
+	color: #000000;
+	}
+
+.RowLollipop a:link { 
+	color: #0033cc;
+	}
+
+.RowLollipop a:visited { 
+	color: #840084;
+	}
+
+.RowLollipop a:hover, .RowLollipop a:active { 
+	color: #ff0000;
+	}
+
+.SeparatorLollipop{
+	color: #bf437f;
+	}
+
+.SeparatorLollipop td{
+	height: 1px;
+	}
+
+
+.AltRowLollipop th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	vertical-align: top;
+	background-color: #e3e2d8; 
+	color: #000000;
+	}
+
+.AltRowLollipop a:link { 
+	color: #0033cc;
+	}
+
+.AltRowLollipop a:visited { 
+	color: #840084;
+	}
+
+.AltRowLollipop a:hover, .AltRowLollipop a:active { 
+	color: #ff0000;
+	}
+
+.NoRecordsLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FooterLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.FooterLollipop a:link { 
+	color: #0033cc;
+	}
+
+.FooterLollipop a:visited { 
+	color: #840084;
+	}
+
+.FooterLollipop a:hover, .FooterLollipop a:active { 
+	color: #ff0000;
+	}
+
+.FooterLollipop img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterLollipop input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordLollipop { 
+	border-left: 1px solid #bf437f; border-bottom: 1px solid #bf437f;
+	width: 100%;
+	}
+
+.ErrorLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f1efec; 
+	}
+
+.ControlsLollipop th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	vertical-align: top;
+	background-color: #f1efec; 
+	color: #000000;
+	}
+
+.BottomLollipop td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #f1efec; color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.BottomLollipop a:link { 
+	color: #0033cc;
+	}
+
+.BottomLollipop a:visited { 
+	color: #840084;
+	}
+
+.BottomLollipop a:hover, .CaptionLollipop a:active { 
+	color: #ff0000;
+	}
+
+.BottomLollipop img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomLollipop input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionLollipop th{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	white-space: nowrap;
+	text-align: left; 
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e3e2d8; 
+	color: #000000;
+	}
+
+.GroupCaptionLollipop td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f1efec; 
+	color: #000000;
+	}
+
+.GroupCaptionLollipop a:link {
+	color: #000000;
+	}
+
+.GroupCaptionLollipop a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionLollipop a:hover, .GroupCaptionLollipop a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterLollipop td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #c7c29d; 
+	color: #000000;
+	}
+
+.GroupFooterLollipop a:link {
+	color: #0033cc;
+	}
+
+.GroupFooterLollipop a:visited{
+	color: #840084;
+	}
+
+.GroupFooterLollipop a:hover, .GroupFooterLollipop a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterLollipop img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterLollipop input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalLollipop td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #e3e2d8; 
+	color: #000000;
+	border-bottom: 2px solid #bf437f;
+	}
+
+.SubTotalLollipop a:link {
+	color: #0033cc;
+	}
+
+.SubTotalLollipop a:visited{
+	color: #840084;
+	}
+
+.SubTotalLollipop a:hover, .SubTotalLollipop a:active{
+	color: #ff0000;
+	}
+
+.TotalLollipop td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #e3e2d8; 
+	color: #000000;
+	}
+
+.TotalLollipop a:link {
+	color: #0033cc;
+	}
+
+.TotalLollipop a:visited{
+	color: #840084;
+	}
+
+.TotalLollipop a:hover, .TotalLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Form Options */
+.ButtonLollipop { 
+	background-color: #bf437f; color: #ffffff; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-size: 85%; font-family: Tahoma;
+	}
+
+/* Calendar */
+
+.CalendarLollipop { 
+	border: 1px solid #bf437f;
+	width: 100%;
+	}
+
+.CalendarWeekdayNameLollipop{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #e3e2d8; 
+	color: #000000;
+	}
+
+.CalendarWeekdayNameLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekdayNameLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarWeekdayNameLollipop a:hover, .CalendarWeekdayNameLollipop a:active{
+	color: #ff0000;
+	}
+
+.CalendarWeekendNameLollipop{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #e3e2d8;	
+	color: #000000;
+	}
+
+.CalendarWeekendNameLollipop a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNameLollipop a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNameLollipop a:link, .CalendarWeekendNameLollipop a:visited{
+	color: #ff0000;
+	}
+
+/* Calendar Day */
+.CalendarDayLollipop{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	text-align: center;
+	background-color: #f1efec;	
+	color: #000000;
+	}
+
+.CalendarDayLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarDayLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarDayLollipop a:hover, .CalendarDayLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendLollipop{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	text-align: center;
+	background-color: #e3e2d8;	
+	color: #000000;
+	}
+
+.CalendarWeekendLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarWeekendLollipop a:hover, .CalendarWeekendLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Today */
+.CalendarTodayLollipop {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border-top: 3px solid #bf437f; border-right: 3px solid #bf437f; border-left: 2px solid #bf437f; border-bottom: 2px solid #bf437f;
+	text-align: center;
+	background-color: #f1efec;	
+	color: #000000;
+	}
+
+.CalendarTodayLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarTodayLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarTodayLollipop a:hover, .CalendarTodayLollipop a:active {
+	color: #ff0000;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayLollipop {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border-top: 3px solid #bf437f; border-right: 3px solid #bf437f; border-left: 2px solid #bf437f; border-bottom: 2px solid #bf437f;
+	text-align: center;
+	background-color: #e3e2d8;	
+	color: #000000;
+	}
+
+.CalendarWeekendTodayLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendTodayLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarWeekendTodayLollipop a:hover, .CalendarWeekendTodayLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayLollipop{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	text-align: center;
+	background-color: #f1efec;	
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthDayLollipop a:link {
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthDayLollipop a:visited{
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthDayLollipop a:hover, .CalendarOtherMonthDayLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayLollipop {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border-top: 3px solid #bf437f; border-right: 3px solid #bf437f; border-left: 2px solid #bf437f; border-bottom: 2px solid #bf437f;
+	text-align: center;
+	background-color: #f1efec;	
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthTodayLollipop a:link {
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthTodayLollipop a:visited{
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthTodayLollipop a:hover, .CalendarOtherMonthTodayLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendLollipop {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	text-align: center;
+	background-color: #e3e2d8;	
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthWeekendLollipop a:link {
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthWeekendLollipop a:visited{
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthWeekendLollipop a:hover, .CalendarOtherMonthWeekendLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayLollipop {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border-top: 3px solid #bf437f; border-right: 3px solid #bf437f; border-left: 2px solid #bf437f; border-bottom: 2px solid #bf437f;
+	text-align: center;
+	color: #bf437f;
+	background-color: #e3e2d8;	
+	}
+
+.CalendarOtherMonthWeekendTodayLollipop a:link {
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthWeekendTodayLollipop a:visited{
+	color: #bf437f;
+	}
+
+.CalendarOtherMonthWeekendTodayLollipop a:hover, .CalendarOtherMonthWeekendTodayLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayLollipop{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border-top: 1px solid #bf437f; border-right: 1px solid #bf437f;
+	background-color: #c7c29d;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+
+.CalendarSelectedDayLollipop a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDayLollipop a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDayLollipop a:hover, .CalendarSelectedDayLollipop a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorLollipop {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	background-color: #f1efec; color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.CalendarNavigatorLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarNavigatorLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarNavigatorLollipop a:hover, .CalendarNavigatorLollipop a:active{
+	color: #ff0000;
+	}
+
+.CalendarNavigatorLollipop img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+/* Calendar Extra */
+.CalendarEventLollipop{
+	font-size: 80%;
+	text-align: left;
+	}
+
+.CalendarEventLollipop a:link {
+	color: #0033cc;
+	}
+
+.CalendarEventLollipop a:visited{
+	color: #840084;
+	}
+
+.CalendarEventLollipop a:hover, .CalendarEventLollipop a:active{
+	color: #ff0000;
+	}

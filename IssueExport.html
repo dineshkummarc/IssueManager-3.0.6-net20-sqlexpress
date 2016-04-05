@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>{res:im_export_to_excel}</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+</head>
+<body>
+<!-- BEGIN Grid issues -->
+<table cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top">
+	      <table cellspacing="0" cellpadding="0" border="0" class="Header">
+	        <tr>
+	          <th>{title}</th>
+	        </tr>
+	      </table>
+
+<table class="Grid" cellspacing="0" cellpadding="3" border="1">
+  <tr class="Caption">
+    <th>{res:im_issue_no}&nbsp;</th>
+    <th>{res:im_issue_name}&nbsp;</th>
+    <th>{res:im_issue_description}&nbsp;</th>
+    <th>{res:im_status}&nbsp;</th>
+    <th>{res:im_priority}&nbsp;</th>
+    <th>{res:im_user_submitted}&nbsp;</th>
+    <th>{res:im_date_submitted}&nbsp;</th>
+    <th>{res:im_assigned_to_orig}&nbsp;</th>
+    <th>{res:im_assigned_to}&nbsp;</th>
+    <th>{res:im_updated_by}&nbsp;</th>
+    <th>{res:im_last_update}&nbsp;</th>
+    <th>{res:im_tested}&nbsp;</th>
+    <th>{res:im_approved}&nbsp;</th>
+    <th>{res:im_version}&nbsp;</th>
+  </tr>
+  <!-- BEGIN Row -->
+  <tr class="Row">
+<td  >{issue_id}&nbsp;</td>
+    <td >{issue_name}&nbsp;</td>
+    <td >{issue_desc}&nbsp;</td>
+    <td >{status_id}&nbsp;</td>
+    <td ><!--{color}-->{priority_id}&nbsp;</td>
+    <td >{user_id}&nbsp;</td>
+    <td >{date_submitted}&nbsp;</td>
+    <td >{assigned_to_orig}&nbsp;</td>
+    <td ><!--{assigned_id}-->{assigned_to}&nbsp;</td>
+    <td >{modified_by}&nbsp;</td>
+    <td >{date_modified}&nbsp;</td>
+    <td >{tested}&nbsp;</td>
+    <td >{approved}&nbsp;</td>
+    <td >{version}&nbsp;</td>
+  </tr>
+  <!-- END Row -->
+  <!-- BEGIN NoRecords --><tr class="NoRecords"><td  colspan="14">{res:CCS_NoRecords}&nbsp;</td></tr><!-- END NoRecords -->
+</table>
+
+</td>
+</tr>
+</table>
+<!-- END Grid issues -->
+</body>
+</html>

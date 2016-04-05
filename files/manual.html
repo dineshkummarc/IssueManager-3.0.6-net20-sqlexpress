@@ -1,0 +1,761 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1250">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.0  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Krzysztof Kowalczykiewicz">
+	<META NAME="CREATED" CONTENT="20060604;12400493">
+	<META NAME="CHANGEDBY" CONTENT="Krzysztof Kowalczykiewicz">
+	<META NAME="CHANGED" CONTENT="20060609;12330582">
+	<STYLE>
+	<!--
+		@page { size: 21.01cm 29.69cm; margin: 2.01cm }
+		TD P { margin-bottom: 0cm }
+		H1 { margin-bottom: 0.2cm }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "Arial Unicode MS"; font-size: 16pt }
+		H1.ctl { font-family: "Tahoma"; font-size: 16pt }
+		P { margin-bottom: 0.2cm }
+		H2 { margin-top: 1cm; margin-bottom: 0.2cm; color: #008080 }
+		H2.western { font-family: "Arial", sans-serif; font-size: 16pt; font-style: italic }
+		H2.cjk { font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+		H3 { margin-bottom: 0.2cm }
+		H3.western { font-family: "Arial", sans-serif }
+		TH P { margin-bottom: 0cm; font-style: italic }
+	-->
+	</STYLE>
+</HEAD>
+<BODY DIR="LTR">
+<H1 CLASS="western" ALIGN=CENTER>IssueManager Standard/Free version
+3.0</H1>
+<H1 CLASS="western" ALIGN=CENTER>User's Manual</H1>
+<P ALIGN=CENTER><FONT SIZE=2><I>revised 2006-06-09</I></FONT></P>
+<H2 CLASS="western">Table of contents</H2>
+<P ALIGN=LEFT STYLE="margin-bottom: 0cm; background: transparent; line-height: 100%">
+<A HREF="#Introduction|outline"><B><FONT SIZE=2>Introduction</FONT></B></A><BR><A HREF="#Installation|outline"><B><FONT SIZE=2>Installation</FONT></B></A><BR><A HREF="#Application basics|outline"><B><FONT SIZE=2>Application
+basics</FONT></B></A><BR><A HREF="#Configuration|outline"><B><FONT SIZE=2>Configuration</FONT></B></A><BR><A HREF="#Using IssueManager|outline"><B><FONT SIZE=2>Using
+IssueManager</FONT></B></A></P>
+<P ALIGN=LEFT STYLE="margin-left: 2cm; margin-bottom: 0cm; line-height: 100%">
+<A HREF="#Browsing and filtering issues list|outline"><FONT SIZE=2>Browsing
+and filtering issues list</FONT></A><BR><A HREF="#Submitting new issue|outline"><FONT SIZE=2>Submitting
+new issue</FONT></A><BR><A HREF="#Browsing issue details and responding|outline"><FONT SIZE=2>Browsing
+issue details and responding</FONT></A><BR><A HREF="#Updating user's profile|outline"><FONT SIZE=2>Updating
+user's profile</FONT></A><BR><A HREF="#Exporting issues list|outline"><FONT SIZE=2>Exporting
+issues list</FONT></A> 
+</P>
+<P STYLE="margin-bottom: 0cm"><A HREF="#Administration|outline"><B><FONT SIZE=2>Administration</FONT></B></A></P>
+<P ALIGN=LEFT STYLE="margin-left: 2cm; line-height: 100%"><A HREF="#Configuring the application|outline"><FONT SIZE=2>Configuring
+the application</FONT></A><BR><A HREF="#Managing user accounts|outline"><FONT SIZE=2>Managing
+user accounts</FONT></A><BR><A HREF="#Managing issues|outline"><FONT SIZE=2>Managing
+issues</FONT></A><BR><A HREF="#Managing priorities and statuses|outline"><FONT SIZE=2>Managing
+priorities and statuses</FONT></A><BR><A HREF="#Managing languages and styles|outline"><FONT SIZE=2>Managing
+languages and styles</FONT></A> 
+</P>
+<H2 CLASS="western"><A NAME="Introduction|outline"></A>Introduction</H2>
+<P STYLE="margin-bottom: 0cm">Issue Manager is a web-based
+application designed to help a workgroup keep track of issues and
+tasks via a shared central resource. The system was designed
+specifically with the IT department in mind, where quick access to
+shared data and history is a requirement, both from a internal
+organizational perspective, as well as to fulfill the needs of the
+customers.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">The data is stored centrally on the
+server, which make it specially suitable for distributed teams who
+can use just the web browser to access it. No local software needs to
+be installed on the client and all web browsers are supported.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">The application itself can be installed
+virtually on any web server, whether internal within the
+organization, or external, hosted by a web hosting company. Several
+distribution versions are provided, including ASP and C# for Windows
+servers and PHP for Linux servers. The distributions do not include
+any custom components and full source code is available for
+examination and customization.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">Additionally, you are free to make
+design modifications and modify visual look, add own logo, etc. You
+may also remove, add or rename fields shown on the screen, provided
+you will handle them properly in the back-end code.</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm">Application supports multiple language
+translations (with date formatting settings) switchable live and
+several predefined visual styles to apply. Both translations and
+styles lists can be expanded to support user's customized items.</P>
+<H2 CLASS="western"><A NAME="Installation|outline"></A>Installation</H2>
+<P>After extracting distribution archive files into some web
+directory you may access it with your browser and installation
+process will be initiated automatically. First, specific requirements
+will be checked if the application may run on the server it is
+installed on.</P>
+<P>Detailed installation steps and requirements are provided in
+<B>INSTALLATION.txt</B> file available in your application root
+directory after extracting archive contents.</P>
+<H2 CLASS="western"><A NAME="Application basics|outline"></A>Application
+basics</H2>
+<P>When application first starts after installation (requirements
+checks and database setup) user is presented with a Login window.
+Before accessing the application every user must authenticate.</P>
+<P><B>Just after installation there is a single administrator account
+in the database. The login and password to that account has been
+specified during installation process.</B></P>
+<P>Depending on the installation options selected other user accounts
+may be available (sample database contains test accounts with login
+and password set to user's first name: janet, tom etc.).</P>
+<P><IMG SRC="images/details_html_m76f0f684.jpg" NAME="graphics3" ALIGN=LEFT WIDTH=185 HEIGHT=104 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P>After successful login the main application working screen
+appears. it contains several titled sections described shortly below.</P>
+<P><IMG SRC="images/details_html_26dd54fd.jpg" NAME="graphics2" ALIGN=LEFT WIDTH=780 HEIGHT=426 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0 STYLE="page-break-inside: avoid">
+	<COL WIDTH=52*>
+	<COL WIDTH=204*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=20%>
+				<P>Section</P>
+			</TH>
+			<TH WIDTH=80%>
+				<P>Contents</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Issue Manager</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P STYLE="margin-bottom: 0.5cm">This top window section spans
+				whole browser window width and contains application title,
+				current user indication and several navigation
+				components.<BR>Currently logged-in user name is presented in
+				Welcome ...! subsection.<BR>In the middle the main application
+				menu is displayed with several navigation links:</P>
+				<UL>
+					<LI><P STYLE="margin-bottom: 0.5cm"><B>Issues List</B> - comes
+					back to the application's main issues list</P>
+					<LI><P STYLE="margin-bottom: 0.5cm"><B>Add New Issue</B> -
+					displays new issue submit form</P>
+					<LI><P STYLE="margin-bottom: 0.5cm"><B>My Profile</B> - displays
+					user account personalization options</P>
+					<LI><P STYLE="margin-bottom: 0.5cm"><B>Administration</B> -
+					displays administration section menu (link only visible for
+					Administrators)</P>
+					<LI><P STYLE="margin-bottom: 0.5cm"><B>Logout</B> - logs current
+					user out and displays login screen</P>
+				</UL>
+				<P>This section is shared by all pages of the application.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Search</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>Search form serves for filtering <B>Issues List</B> presented
+				below with several criteria including text search, assignee and
+				attribute matching.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Bookmarks</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>Bookmarks section list some most commonly used issue views.
+				Clicking a link in this section is equivalent to executing
+				described filtering.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Summary</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>Summary section lists number of issues grouped by status
+				matching current filtering criteria. Clicking status name filters
+				issues only with specified status.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Issues...</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>The most important section on the main page is a list of
+				issues matching current filtering criteria. The grid's title
+				indicates current filtering criteria. The grid features also page
+				navigator and sortable column headers. This section will be
+				further referred as <B>Issues List</B></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>page footer</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P STYLE="margin-bottom: 0.5cm">Footer section has no specific
+				borders or title, but contains UltraApps logo and links to User's
+				Manual and License information.</P>
+				<P>This section is shared by all pages of the application.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><BR><BR>
+</P>
+<H2 CLASS="western"><A NAME="Configuration|outline"></A>Configuration</H2>
+<P>Application configuration is available through <B>System
+Configuration</B> page available in the <B>Administration</B>
+section. Please note that <B>Administration</B> link and
+configuration page is only available for administrators (users with
+Security Level=3).</P>
+<P><IMG SRC="images/details_html_4d21ee4c.jpg" NAME="graphics1" ALIGN=LEFT WIDTH=374 HEIGHT=407 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>Edit Settings</B> form contains various configuration settings
+that customize how the application acts mainly in terms of attachment
+uploads and mailing. Each configuration setting is described in a
+table below:</P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=65*>
+	<COL WIDTH=191*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=25%>
+				<P>Setting</P>
+			</TH>
+			<TH WIDTH=75%>
+				<P>Description</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Upload Enabled</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Enables or disables file upload feature that allows to attach
+				screenshots or other files to your issues and responses. This is
+				a global override. When enabled administrator may still restrict
+				some users not to upload any files.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>File Extensions</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>List of semicolon-separated file masks marking usually file
+				extensions that are accepted for issue attachments. User will not
+				be able to attach files not matching the criteria.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>File Path</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Name of a directory uploaded files will be load into. You
+				should specify a subdirectory name under your application's web
+				directory. Make sure this directory is writable for user account
+				running your server-side scripts.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Notify New From</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Email address used to send new issue notifications from.<BR>These
+				notifications are sent to the users assigned to the new case (if
+				enabled in assignee user's profile and not assigning to
+				yourself).</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Notify New Subject</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>New assigned issue notification subject. The following matches
+				are substituted: <BR>{issue_no}, {issue_title}, {issue_poster},
+				{issue_receiver}</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Notify New Body</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>New assigned issue notification body. The following matches
+				are substituted: <BR>{issue_no}, {issue_title}, {issue_desc},
+				{issue_url}, {issue_poster}, {issue_receiver}</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Notify Change From</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Email address used to send changed issue notifications
+				from.<BR>These notifications are sent to the users previously
+				assigned to changed case and to new assignee (if enabled in
+				user's profile and not assigning to yourself).</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Notify Change Subject</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Changed issue notification subject. The following matches are
+				substituted: <BR>{issue_no}, {issue_title}, {issue_poster},
+				{issue_receiver}</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Notify Change Body</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Changed issue notification body. The following matches are
+				substituted: <BR>{issue_no}, {issue_title}, {issue_desc},
+				{issue_url}, {issue_poster}, {issue_receiver}</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>Email component</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Mailing method that will be used to send email notifications.
+				Different server-side technologies offer different methods of
+				sending emails, so components choice may vary depending on
+				application's back-end technology.<BR>Two options are always
+				shared through. It is <B>Mailing disabled</B> and <B>Screen print
+				out (testing)</B>. You may disable email notifications completely
+				if no mailing method is available on your server or print emails
+				to be sent in browser window to verify content (application may
+				not work in usual way during such testing).</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=25%>
+				<P><B>SMTP host</B></P>
+			</TD>
+			<TD WIDTH=75%>
+				<P>Some mailing methods may support additional parameter for
+				specifying external SMTP server address to send emails through.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P><BR><BR>
+</P>
+<H2 CLASS="western"><A NAME="Using IssueManager|outline"></A>Using
+IssueManager</H2>
+<H3 CLASS="western"><A NAME="Browsing and filtering issues list|outline"></A>
+Browsing and filtering issues list</H3>
+<P>The <B>Issues List</B> presents basic information about selected
+issues. The data is presented using columnar grid showing: issue
+number, name, status, priority, assignee name, date submitted and
+last updated, additional boolean tested and approved flags plus
+version field.</P>
+<P>The <B>Issues List</B> offers variety of navigation and filtering
+options, using which it is easy to find information users want and
+present it the way they want it.</P>
+<P><BR><BR>
+</P>
+<P><B>How to sort data in the grid?</B></P>
+<P>By default records in the issues grid are sorted by <B>Last Update</B>
+column descending. This means most recently updated issues are
+displayed at the top. Sometimes it is useful to sort data in the grid
+using another column. It is possible by clicking column caption text
+which is a link. Clicking it causes grid to sort its data using
+values in column clicked. A triangle appears to indicate non-default
+sorting criteria have been applied. It also indicates sorting
+direction. If user want reverse sorting order it is enough to click
+the column caption text link send time. Triangle order indicator
+switches direction.</P>
+<TABLE WIDTH=20% BORDER=0 CELLPADDING=4 CELLSPACING=0 STYLE="page-break-inside: avoid">
+	<COL WIDTH=128*>
+	<COL WIDTH=128*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TD WIDTH=50%>
+				<P ALIGN=LEFT><IMG SRC="images/details_html_26a48619.jpg" NAME="graphics8" ALIGN=RIGHT WIDTH=92 HEIGHT=146 BORDER=0><BR CLEAR=RIGHT><BR>
+				</P>
+			</TD>
+			<TD WIDTH=50%>
+				<P ALIGN=LEFT><IMG SRC="images/details_html_m53aa69b8.jpg" NAME="graphics9" ALIGN=LEFT WIDTH=92 HEIGHT=146 BORDER=0><BR CLEAR=LEFT><BR>
+				</P>
+			</TD>
+		</TR>
+	</THEAD>
+</TABLE>
+<P><BR><BR>
+</P>
+<P>Images below show the appearance and contents of <B>Priority</B>
+column after clicking column caption for the first time, and then
+after following click.</P>
+<P><BR><BR>
+</P>
+<P><B>How to filter data in the grid?</B></P>
+<P>The <B>Issues List</B> by default presents list of all issues that
+are not Closed. IssueManager users may customize and filter grid
+contents using wide range of criteria. Filtering uses the <B>Search</B>
+form displayed above the grid. The form contains the following
+fields: <B>Keyword</B> for specifying text to match against issue
+name and description (only issues containing specified keyword in
+issue name or description are listed), <B>Priority</B> (only issues
+with selected priority are listed), <B>Status</B> (only issues with
+specified status are listed), <B>Status is not</B> (only issues with
+any status except selected are listed) and <B>Assigned To</B> (only
+issues assigned to specified user are listed).</P>
+<P>Users may combine those elemental conditions and build complex
+search results such as: all issues containing &ldquo;email&rdquo; in
+name or description, with highest priority, status set to Bug and
+assigned to myself.</P>
+<P><IMG SRC="images/details_html_m16bac413.jpg" NAME="graphics10" ALIGN=LEFT WIDTH=258 HEIGHT=158 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>How to use bookmarks?</B></P>
+<P>To simplify navigation to some most often used <B>Issues List</B>
+views IssueManager offers <B>Bookmarks</B> section. It contains 4
+links to the most commonly used grid filterings. It is All Issues
+(all issues displayed including <B>Closed</B> issues), <B>Pending
+(default) </B>(issues that are not <B>Closed</B>). <B>Assigned by Me</B>
+(issues that have been assigned by the current user) and <B>Assigned
+to Me</B> (issues that have been assigned to the current user.</P>
+<P STYLE="font-weight: medium">Clicking a link filters grid using
+specified criteria and is equivalent to executing some search on the
+<B>Issues List</B>. Bookmarks are especially useful to reset to the
+default view when after applying complex filtering (instead of
+resetting <B>Search</B> form fields and resubmitting).</P>
+<P><IMG SRC="images/details_html_m44444af7.jpg" NAME="graphics11" ALIGN=LEFT WIDTH=95 HEIGHT=95 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>How to filter issues quickly by status?</B></P>
+<P STYLE="font-weight: medium">The last from the sections displayed
+above <B>Issues List</B> is <B>Summary</B> section. It displays
+number of issues matching current search criteria with specific
+status set. Status names are listed (only ones that exist in the
+current <B>Issues List</B>) and number of issues with given status is
+shown beside.</P>
+<P STYLE="font-weight: medium">Each status name listed is a link.
+Clicking it filters current grid results by status selected. It
+preserves other searching criteria in effect and is equivalent to
+selecting status in <B>Search</B> form's <B>Status</B> field and
+submitting.</P>
+<P><IMG SRC="images/details_html_m2f5c1e84.jpg" NAME="graphics12" ALIGN=LEFT WIDTH=83 HEIGHT=95 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="Submitting new issue|outline"></A>Submitting
+new issue</H3>
+<P>Users can submit new Issues to to system by clicking <B>Add New
+Issue</B> link that is always shown in the application header section
+or another one shown just below the main <B>Issues List</B>.</P>
+<P>After clicking clicking the link Add New Issue form is displayed
+where the user enters <B>Issue</B> name, <B>Description</B> and
+selects various parameters regarding the issue, such as <B>Priority</B>
+and <B>Status</B>, <B>Version</B> of a product issue is concerned
+with as well as the user that will be <B>Assigned To</B> the issue.</P>
+<P>Submitter may also upload an attachment related to the issue (such
+as screenshot, example data, code) using <B>File</B> field, but only
+the administrator has enabled file uploads in the <B>System
+Configuration</B> page and allowed the current user to upload files
+using <B>Users</B> administration section.</P>
+<P><IMG SRC="images/details_html_23549e35.jpg" NAME="graphics4" ALIGN=LEFT WIDTH=596 HEIGHT=329 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="Browsing issue details and responding|outline"></A>
+Browsing issue details and responding</H3>
+<P>Existing issue details can be displayed after clicking issue name
+link in the <B>Issues List</B>. This view is called <B>Issue Details</B>
+and is composed of several sections. Each section has been described
+in the table below.</P>
+<P><IMG SRC="images/details_html_m453cf1b9.jpg" NAME="graphics5" ALIGN=LEFT WIDTH=627 HEIGHT=683 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0 STYLE="page-break-inside: avoid">
+	<COL WIDTH=52*>
+	<COL WIDTH=204*>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=20%>
+				<P>Section</P>
+			</TH>
+			<TH WIDTH=80%>
+				<P>Contents</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Issue</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>This section presents details of the current issue. This
+				includes issue name and description, information about users
+				assigned, submitting and originally assigned, submit date and
+				other attributes as priority, status, version, tested and
+				approved flags. All these fields are presented read-only and
+				their values may only be updated submitting new response to the
+				issue.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>List of Files</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>This grid lists issue file attachments submitted when adding
+				new issue or responding. If there are no attachments submitted
+				the grid is hidden. If visible the list presents information
+				about user submitting and upload time of each file. Users may
+				click attachment file name to open or download attachment in new
+				window.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Response</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>Response form is used to submit responses to the currently
+				displayed issue. Response includes similar fields to an issue
+				itself. Response attributes submitted alter values of the parent
+				issue attributes. It is also possible to submit new file
+				attachment when submitting issue response. Response text field
+				doesn't replace issue description, it is just saved in the
+				Response History section.<BR>New response is submitted after
+				clicking <B>Add </B>button provided no validation errors occur.</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=20%>
+				<P>Response History</P>
+			</TD>
+			<TD WIDTH=80%>
+				<P>Response History section lists all responses made to the
+				current issue. All values submitted including author, assignee,
+				date, priority, status and response text are displayed for each
+				issue. If there are too many responses pagination is possible
+				using navigator below the list.</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<H3 CLASS="western"><A NAME="Updating user's profile|outline"></A>Updating
+user's profile</H3>
+<P>Each logged in user may access several personalization options
+accessing <B>My Profile</B> link in the application header menu.
+Using <B>Edit Profile</B> form user may change own password for
+authentication (providing old password and new password repeated).
+Other options available configure user mailing settings: email
+address to send user's notifications to and 3 checkboxes to define
+which notification types will be sent to the current user
+(notification about being assigned new issue, about reassigning issue
+submitted by the user originally and about losing issue assignment).</P>
+<P>Edit Profile form also includes read-only information about user's
+<B>Security Level</B> and if administrator has allowed the user <B>file
+upload</B>.</P>
+<P><IMG SRC="images/details_html_mb8116f8.jpg" NAME="graphics6" ALIGN=LEFT WIDTH=367 HEIGHT=266 BORDER=0><BR CLEAR=LEFT>Changes
+to the profile are applied after clicking <B>Submit </B>button. If
+there are any issues with the data submitted validation errors are
+displayed in red.</P>
+<H3 CLASS="western"><A NAME="Exporting issues list|outline"></A>Exporting
+issues list</H3>
+<P>IssueManager offers simple export feature that converts currently
+displayed <B>Issues List</B> to a format that can be opened by
+Microsoft Excel.</P>
+<P>To download export file user needs to click <B>Export to Excel</B>
+link available below <B>Issues List</B> grid (close to <B>Add New
+Issue</B> link). After clicking the link file download is detected by
+your browser and you user is able to save .xls file for opening with
+Microsoft Excel.</P>
+<P>Export file produced by IssueManager contains the same data as
+currently displayed <B>Issues List</B>, but without any pagination
+(all records filtered are exported).</P>
+<P><IMG SRC="images/details_html_m5bcce2bc.jpg" NAME="graphics7" ALIGN=LEFT WIDTH=303 HEIGHT=205 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H2 CLASS="western"><A NAME="Administration|outline"></A>Administration</H2>
+<P><B>Administration</B> section of the application is only
+accessible to application administrators. Only they see
+Administration link in the application header menu. Even if
+navigating using known URL normal IssueManager users will be rejected
+access and forced to log in using different account.</P>
+<P>After clicking <B>Administration</B> link vertical menu appears
+listing items that are available for administrator to manage.</P>
+<P><IMG SRC="images/details_html_43b971b.jpg" NAME="graphics13" ALIGN=LEFT WIDTH=119 HEIGHT=143 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P>Once clicked on any menu link horizontal menu turns into vertical
+menu and is displayed under header top section along with any page in
+<B>Administration</B> section.</P>
+<P><IMG SRC="images/details_html_m16434df5.jpg" NAME="graphics14" ALIGN=LEFT WIDTH=622 HEIGHT=67 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="Configuring the application|outline"></A>
+Configuring the application</H3>
+<P><B>System Configuration</B> page has been described in detail in
+<B>Configuration</B> section above.</P>
+<H3 CLASS="western"><A NAME="Managing user accounts|outline"></A>Managing
+user accounts</H3>
+<P>Users management pages are available after clicking <B>Users</B>
+from <B>Administration</B> menu.</P>
+<P>A grid lists user accounts configured in the application. The
+example below presents predefined user accounts available in the
+sample database.</P>
+<P>Users grid lists user's <B>Name</B> column, <B>Email</B>, <B>Security
+level</B> and <B>Allow Upload</B> flag. The grid offers common
+sorting feature (clicking column caption text) and paginating (using
+navigator in the bottom).</P>
+<P>To create new user account <B>Add New User</B> link located in the
+grid's bottom can be used. Administrator needs to fill <B>User</B>
+form at least specifying fields required.</P>
+<P>To edit existing user account details or remove an account
+administrator needs to click a value from user <B>Name </B>column.</P>
+<P><IMG SRC="images/details_html_5dbe7568.jpg" NAME="graphics15" ALIGN=LEFT WIDTH=357 HEIGHT=208 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P>Clicking user's name navigates to the <B>User </B>details form.
+Administrator may configure user's login here, change password,
+select another security level, provide name and email and configure
+several boolean flags allowing user to upload and receive different
+types of notifications.</P>
+<P><IMG SRC="images/details_html_39bbcb2.jpg" NAME="graphics16" ALIGN=LEFT WIDTH=366 HEIGHT=265 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P>When adding new user account <B>Add</B> button is used to submit
+the data. When updating an account <B>Submit</B> button saves changes
+(provided they are valid), <B>Delete</B> removes user account
+permanently from database and <B>Cancel</B> button aborts any changes
+made and returns to the <B>Users</B> list.</P>
+<P><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="Managing issues|outline"></A>Managing
+issues</H3>
+<P>IssueManager's <B>Administration</B> section contains <B>Issues</B>
+link which contains management section for issues, attachments and
+responses. The overall layout of the section is similar to the one
+used on <B>Issues List</B>, <B>Issue Details</B> and <B>Response</B>
+form, but Administrators in this section have more options modifying
+record values.</P>
+<P>The main view of <B>Issues Management</B> section presents <B>Search</B>
+form similar to the one located on the main page and issues grid
+listing issues matching search criteria (keyword, priority, status,
+not status and assigned user).</P>
+<P>This issues grid offers common list facilities as column sorting
+and paginating with bottom navigator. Clicking value from grid's
+<B>Issue</B> column navigates to the <B>Issue Management</B> page.
+Adding new issue is only possible from the user section of the
+application, not administration section. You are free to edit such
+issue once submitted.</P>
+<P><IMG SRC="images/details_html_7cb51cc9.jpg" NAME="graphics21" ALIGN=LEFT WIDTH=734 HEIGHT=319 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>Issue Management</B> page presents <B>Issue Maintenance</B>
+form using which administrator may update most from the issue fields.
+Changes are saved clicking <B>Submit </B>button and <B>Cancel </B>button
+navigates back to the <B>Issues Maintenance</B>. Administrator may
+also remove duplicated, no longer needed or invalid issue using
+<B>Delete</B> button. All file attachments and responses are also
+deleted after removing parent issue.</P>
+<P><B>Issue Management</B> page also lists issue's file attachments
+in the <B>List of Files</B> grid (sortable, paginable. Clicking file
+name link in this grid navigates to the <B>File Maintenance </B>page
+described below.</P>
+<P>The last page component is <B>Response History</B> section listing
+all responses made to the edited issue. Most information about each
+response is presented in the list, but clicking <B>Edit</B> link
+below each issue brings administrator to the <B>Response Maintenance
+</B>page described below.</P>
+<P><IMG SRC="images/details_html_38eb9106.jpg" NAME="graphics22" ALIGN=LEFT WIDTH=764 HEIGHT=626 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>File Maintenance</B> form is used to edit issue attachment
+details including date and user uploaded and file itself. Clicking
+the first link in this form opens pop-up window for browsing or
+downloading attached file. A new file can be uploaded using file
+upload control (removing existing file). As always <B>Submit</B>
+button saves changes made, <B>Cancel</B> returns to the parent issue
+details and <B>Delete</B> button deletes attachment record
+permanently from database and removes uploaded file from disk.</P>
+<P><IMG SRC="images/details_html_5b7456dc.jpg" NAME="graphics23" ALIGN=LEFT WIDTH=372 HEIGHT=136 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>Response maintenance</B> form displays for editing fields of
+selected response. Responses are always child records to some issue,
+submitting new response modifies some of the attributes of the parent
+issue. Maintenance form contains fields for choosing submitter and
+assigned users as well as response date. Other fields include
+response status and priority and textual response description. As
+always <B>Submit</B> button saves changes made, <B>Cancel</B> returns
+to the parent issue details and <B>Delete</B> button deletes response
+record from database.</P>
+<P><IMG SRC="images/details_html_m7a1a5eb4.jpg" NAME="graphics24" ALIGN=LEFT WIDTH=412 HEIGHT=199 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="Managing priorities and statuses|outline"></A>
+Managing priorities and statuses</H3>
+<P>Priorities and statuses are important aspect of every project.
+Many managers customize list of available item of these types to
+apply organization policies or just customize IssueManager more to
+their personal needs.</P>
+<P>With 3.0 version IssueManager became multilingual application so
+priorities and status needed to become easy to translate.
+IssueManager uses special <B>res:translation</B> format to indicate
+that given priority/status name needs to be extracted from current
+translation's dictionary. If you don't use multiple languages in your
+application specify priorities and statuses in formal textual format
+(without res: prefix).</P>
+<P><B>Priorities</B> management page contains both grid and details
+record form on a single page. By default <B>Priority</B> details form
+works in insert mode displaying <B>Add</B> and <B>Cancel</B> buttons.
+After filling priority information (name or name's translation, color
+to display priority with and ordering number) <B>Add</B> buttons
+appends new item to all listboxes used for selecting priority in the
+application.</P>
+<P><B>Priorities</B> grid lists all available priorities on both
+translated and untranslated form along with color and order specified
+for each item. Clicking priority caption link brings <B>Priority</B>
+form into edit mode with <B>Submit</B> button to apply changes. <B>Add
+New Priorit</B>y link in the grid's bottom (or clicking <B>Cancel</B>
+in the form) turns <B>Priority</B> form back to insert mode.</P>
+<P><IMG SRC="images/details_html_m63a31069.jpg" NAME="graphics17" ALIGN=LEFT WIDTH=590 HEIGHT=175 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><B>Statuses</B> administrative section works in a similar manner.
+<B>Status</B> form works in insert mode by default. Clicking value
+from <B>Statuses</B> grid brings <B>Status</B> form into edit mode
+where changes can be saved using <B>Submit</B> button. Returning to
+insert mode is possible then clicking <B>Add New Status</B> link or
+<B>Cancel</B> button.</P>
+<P><IMG SRC="images/details_html_2dfdc21.jpg" NAME="graphics18" ALIGN=LEFT WIDTH=523 HEIGHT=225 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<H3 CLASS="western"><A NAME="Managing languages and styles|outline"></A>
+Managing languages and styles</H3>
+<P>Version 3.0 of IssueManager brings multiple translations and
+visual styles selection. Switching both of those is possible
+selecting values from application header's listboxes (to the right).
+Those listboxes contain items that can be administered via <B>Languages</B>
+and <B>Styles</B> pages of <B>Administration</B> section.</P>
+<P>It's important to note that in the 3.0 version of IssueManager
+these pages serve only to create new items in the header listboxes.
+No other steps are made to make new selection valid.</P>
+<P>Administrator/developer customizing the application needs to
+follow several technology-dependent steps to create new translation
+or visual style. Documentation will be soon released helping
+customizing these items.</P>
+<P>Both <B>Styles </B>and <B>Languages</B> pages present similar
+layout to <B>Priorities </B>and <B>Styles</B> pages. They both
+contain a grid listing listbox items and record form for either
+inserting new value or updating value selected for editing by
+clicking name link in the grid. Forcing record into insert state is
+possible clicking <B>Add New</B> link located in the grid's bottom.</P>
+<H2 CLASS="western"><IMG SRC="images/details_html_me959d00.jpg" NAME="graphics19" ALIGN=LEFT WIDTH=479 HEIGHT=101 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</H2>
+<P><IMG SRC="images/details_html_m5371fa54.jpg" NAME="graphics20" ALIGN=LEFT WIDTH=473 HEIGHT=183 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=RIGHT><FONT SIZE=2><I>document revised 2006-06-09</I></FONT></P>
+</BODY>
+</HTML>

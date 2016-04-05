@@ -1,0 +1,5 @@
+'Formatting info @0-9DDA3B40
+en|en|US|True;False;|2|.|,|January;February;March;April;May;June;July;August;September;October;November;December|Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec|Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday|Sun;Mon;Tue;Wed;Thu;Fri;Sat|m!/!d!/!yyyy|dddd!, !mmmm! !dd!, !yyyy|h!:!nn! !tt|h!:!nn!:!ss! !tt|0|AM|PM|utf-8|65001|0|0|S;M;T;W;T;F;S|1033
+pl|pl|PL|1;0;|2|,| |styczeń;luty;marzec;kwiecień;maj;czerwiec;lipiec;sierpień;wrzesień;październik;listopad;grudzień|sty;lut;mar;kwi;maj;cze;lip;sie;wrz;paź;lis;gru|niedziela;poniedziałek;wtorek;środa;czwartek;piątek;sobota|N;Pn;Wt;Śr;Cz;Pt;So|yyyy!-!mm!-!dd|d! !mmmm! !yyyy|HH!:!nn|HH!:!nn!:!ss|1|||utf-8|65001|0|0|N;P;W;Ś;C;P;S|1045
+'End Formatting info
+

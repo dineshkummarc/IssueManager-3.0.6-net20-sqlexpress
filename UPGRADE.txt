@@ -1,0 +1,26 @@
+IssueManager Standard version 3.0
+UPGRADE GUIDE (.NET version)
+----------------------------------------------------------------------------------
+
+IMPORTANT!
+First step before you upgrade your application is to backup both application files and database.
+Depending on database engine use you need to use SQL Server's backup facilities or copy .mdb file from db folder to another location.
+It's possible that during installation data in your database will be overwritten or deleted!
+
+UPGRADING .NET+ACCESS
+1. Copy your original .mdb file from App_Data folder.
+2. Extract new version archive's files overwriting existing ones.
+3. Copy your original database back overwriting empty database from the archive.
+4. Use updated application with previous database.
+
+UPGRADING .NET+SQLEXPRESS
+1. Copy your original .mdf and .ldf files from App_Data folder.
+2. Extract new version archive's files overwriting existing ones.
+3. Copy your original database files back overwriting empty database from the archive.
+4. Use updated application with previous database.
+
+UPGRADING .NET+MSSQL
+1. Backup your database.
+2. Extract new version archive's files overwriting existing ones.
+3. Edit web.config file providing valid database Connection String (see INSTALLATION.txt)
+4. Use updated application with previous database.
